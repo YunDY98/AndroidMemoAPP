@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffdf">
+    <EditText
+        android:hint="제목을 적으시오!"
+        android:id="@+id/list_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:background="#00E0A0"
+        android:textColor="#ffffff"
+        android:id="@+id/addmemo"
+        android:textStyle="bold"
+        android:text="메모추가"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="#ff6040"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:text="뒤로가기"
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+    <ListView
+        android:id="@+id/memoview"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
